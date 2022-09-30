@@ -9,14 +9,14 @@
     <Grid>
         <Image x:Name="ImagenBox" HorizontalAlignment="Left" Height="332" Margin="39,42,0,0" VerticalAlignment="Top" Width="456" Source="imagen.jpg"/>
         <TextBlock HorizontalAlignment="Left" Margin="586,42,0,0" TextWrapping="Wrap" Text="Opacidad" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <RadioButton x:Name="OpacidadAlta" Content="Alta" HorizontalAlignment="Left" Margin="586,102,0,0" VerticalAlignment="Top" FontSize="18" Click="OpacidadAltaClicked"/>
-        <RadioButton x:Name="OpacidadMedia" Content="Media" HorizontalAlignment="Left" Margin="586,130,0,0" VerticalAlignment="Top" FontSize="18" Click="OpacidadMediaClicked"/>
-        <RadioButton x:Name="OpacidadBaja" Content="Baja" HorizontalAlignment="Left" Margin="586,158,0,0" VerticalAlignment="Top" FontSize="18" Click="OpacidadBajaClicked"/>
+        <RadioButton x:Name="OpacidadAlta" Content="Alta" HorizontalAlignment="Left" Margin="586,102,0,0" VerticalAlignment="Top" FontSize="18" Click="OpacidadAltaClicked" GroupName="Opacidad" IsChecked="True"/>
+        <RadioButton x:Name="OpacidadMedia" Content="Media" HorizontalAlignment="Left" Margin="586,130,0,0" VerticalAlignment="Top" FontSize="18" Click="OpacidadMediaClicked" GroupName="Opacidad"/>
+        <RadioButton x:Name="OpacidadBaja" Content="Baja" HorizontalAlignment="Left" Margin="586,158,0,0" VerticalAlignment="Top" FontSize="18" Click="OpacidadBajaClicked" GroupName="Opacidad"/>
         <TextBlock HorizontalAlignment="Left" Margin="586,204,0,0" TextWrapping="Wrap" Text="Ajuste" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <RadioButton x:Name="AjusteRelleno" Content="Relleno" HorizontalAlignment="Left" Margin="586,252,0,0" VerticalAlignment="Top" FontSize="18" Click="AjusteRellenoClicked"/>
-        <RadioButton x:Name="AjusteUniforme" Content="Uniforme" HorizontalAlignment="Left" Margin="586,276,0,0" VerticalAlignment="Top" FontSize="18" Click="AjusteUniformeClicked"/>
-        <RadioButton x:Name="AjusteRellenoUniforme" Content="Relleno Uniforme" HorizontalAlignment="Left" Margin="586,300,0,0" VerticalAlignment="Top" FontSize="18" Click="AjusteRellenoUniformeClicked"/>
-        <RadioButton x:Name="AjusteSinAjuste" Content="Sin Ajuste" HorizontalAlignment="Left" Margin="586,326,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.397,1.935" Click="AjusteSinAjusteClicked"/>
+        <RadioButton x:Name="AjusteRelleno" Content="Relleno" HorizontalAlignment="Left" Margin="586,252,0,0" VerticalAlignment="Top" FontSize="18" Click="AjusteRellenoClicked" GroupName="Relleno" IsChecked="True"/>
+        <RadioButton x:Name="AjusteUniforme" Content="Uniforme" HorizontalAlignment="Left" Margin="586,276,0,0" VerticalAlignment="Top" FontSize="18" Click="AjusteUniformeClicked" GroupName="Relleno" />
+        <RadioButton x:Name="AjusteRellenoUniforme" Content="Relleno Uniforme" HorizontalAlignment="Left" Margin="586,300,0,0" VerticalAlignment="Top" FontSize="18" Click="AjusteRellenoUniformeClicked" GroupName="Relleno"/>
+        <RadioButton x:Name="AjusteSinAjuste" Content="Sin Ajuste" HorizontalAlignment="Left" Margin="586,326,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.397,1.935" Click="AjusteSinAjusteClicked" GroupName="Relleno"/>
 
     </Grid>
 </Window>
